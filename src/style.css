@@ -1,1 +1,66 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+}
+.Card {
+  background-color: white;
+  width: 250px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-size: 70px;
+  display: flex;
+  flex-direction: column;
+  border-color: black;
+  align-items: center;
+  justify-content: space-around;
+}
+.Card.heart::before {
+  content: "\2665";
+  align-self: flex-start;
+  padding-left: 20px;
+  color: red;
+}
+.Card.heart::after {
+  content: "\2665";
+  align-self: flex-end;
+  padding-right: 20px;
+  color: red;
+}
+.Card.club::before {
+  content: "\2663";
+  align-self: flex-start;
+  padding-left: 20px;
+}
+.Card.club::after {
+  content: "\2663";
+  align-self: flex-end;
+  padding-right: 20px;
+}
+.Card.spades::before {
+  content: "\2660";
+  align-self: flex-start;
+  padding-left: 20px;
+}
+.Card.spades::after {
+  content: "\2660";
+  align-self: flex-end;
+  padding-right: 20px;
+}
+.Card.diamond::before {
+  content: "\2666";
+  align-self: flex-start;
+  padding-left: 20px;
+  color: red;
+}
+.Card.diamond::after {
+  content: "\2666";
+  align-self: flex-end;
+  padding-right: 20px;
+  color: red;
+}
+.Boton {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
