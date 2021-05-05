@@ -21,7 +21,7 @@ let elementNumber = document.querySelector(".Number");
 elementNumber.innerHTML = card[numberRandom];
 
 let randomPoker = poker[Math.floor(Math.random() * poker.length)];
-elementCard.className = "theCard";
+elementCard.className = "Card";
 elementCard.classList.add(randomPoker);
 
 window.addEventListener("load", () => main());
